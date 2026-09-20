@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YouTube Crawler Drive Delivery의 기능과 Google Drive 사용 목적 안내">
+  <title>YouTube Crawler Drive Delivery</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#fff;color:#20252b;font:16px/1.75 system-ui,-apple-system,sans-serif;letter-spacing:0}main,footer{max-width:820px;margin:auto;padding:40px 24px}header{border-bottom:2px solid #167568;padding-bottom:24px}h1{font-size:30px;line-height:1.35;overflow-wrap:anywhere;margin:0 0 16px}h2{font-size:21px;margin-top:32px}p,ul{margin:14px 0}a{color:#125bab;text-underline-offset:3px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #c56629;outline-offset:4px}footer{border-top:1px solid #d8dee3;padding-top:20px;font-size:14px;color:#525a63}.label{font-size:14px;color:#525a63}code{overflow-wrap:anywhere}@media(max-width:480px){main,footer{padding:28px 20px}h1{font-size:26px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="label">개인용 일일 보고서 자동화 · 앱 안내</p>
+      <h1>YouTube Crawler Drive Delivery</h1>
+      <p>운영자가 지정한 YouTube 채널의 공개 영상 통계를 수집하고, Excel 보고서를 만들어 운영자의 Telegram과 Google Drive에 전달하는 개인용 프로그램입니다. Google 또는 YouTube가 제공하는 공식 서비스가 아닙니다.</p>
+    </header>
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">프로그램의 목적</h2>
+      <p>누적 조회수 기준을 통과한 YouTube Shorts의 순위, 공개 영상 정보, 내용 요약, 등장인물과 주요 대사를 일별 Excel로 정리합니다. Google Cloud에서 정기 실행하며, 이 웹페이지는 프로그램 실행 화면이 아닌 인증 및 개인정보 안내 문서입니다.</p>
+    </section>
+    <section aria-labelledby="drive">
+      <h2 id="drive">Google Drive 권한을 사용하는 이유</h2>
+      <p>사용자가 지정한 기존 Drive 폴더에 날짜별 Excel 보고서를 저장하기 위해 사용자가 직접 Google 계정으로 승인합니다. 같은 날짜에 다시 실행하면 같은 이름의 Excel을 갱신합니다.</p>
+      <ul>
+        <li>승인한 계정의 이메일과 지정 폴더의 파일 추가 권한을 확인합니다.</li>
+        <li>지정 폴더의 같은 이름 파일을 확인하고 보고서를 생성하거나 갱신합니다.</li>
+        <li>연결 테스트에서 프로그램이 만든 임시 파일만 생성, 갱신 후 삭제합니다.</li>
+      </ul>
+      <p>현재 요청하는 <code>https://www.googleapis.com/auth/drive</code> 범위는 계정의 Drive 전체에 접근할 수 있는 넓은 권한입니다. 프로그램의 실제 처리는 위에 설명한 지정 폴더의 보고서 작업으로 한정됩니다. 관련 없는 Drive 파일의 내용은 수집하거나 분석하지 않습니다.</p>
+    </section>
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">데이터 처리 및 문의</h2>
+      <p>수집 항목, 저장 위치, 보관과 삭제, 승인 철회 방법은 <a href="privacy.html">개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+      <p>운영 및 문의: <a href="mailto:junghyun.ds2@gmail.com">junghyun.ds2@gmail.com</a></p>
+      <p>본 프로그램은 운영자 개인의 보고서 자동화를 위한 도구이며, 일반 대중을 대상으로 계정을 모집하거나 유료 서비스를 제공하지 않습니다.</p>
+    </section>
+  </main>
+  <footer>최종 업데이트: 2026-09-20 · <a href="privacy.html">개인정보처리방침</a></footer>
+</body>
+</html>
